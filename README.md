@@ -1,6 +1,4 @@
-Here is a `README.md` file for your repository, designed to be aesthetically pleasing and informative, similar to trending repositories on GitHub.
 
-```markdown
 # OSX OSINT Auto Installer
 
 ![OSINT Tools](https://img.shields.io/badge/OSINT-Tools-green)
@@ -67,11 +65,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is not licenced & offers not warrenty. Use & modify as you deem fit.
+**This project is not licenced & offers not warrenty. Use & modify as you deem fit.**
 ---
 
 Built with Rick Sanchez's genius and Daniel Gillaspy's help, you pathetic Earthlings!
-```
+
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/danielgillaspy?igsh=MWRjeXJnOXo5aXhkYg%3D%3D&utm_source=qr)
 [![Email](https://img.shields.io/badge/Email-daniel@gillaspy.me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daniel@gillaspy.me)
