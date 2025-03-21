@@ -1,109 +1,77 @@
-Here is the updated `README.md` file including the source and popular commands for each tool:
+Here is a `README.md` file for your repository, designed to be aesthetically pleasing and informative, similar to trending repositories on GitHub.
 
-```md
-# osxOSINT
+```markdown
+# OSX OSINT Auto Installer
 
-## Description
+![OSINT Tools](https://img.shields.io/badge/OSINT-Tools-green)
 
-`osxOSINT` is an autoinstaller for macOS compatible OSINT (Open Source Intelligence) tools. This script automates the installation and setup of several powerful OSINT tools, making it easier for users to perform reconnaissance and gather information.
+Welcome to the OSX OSINT Auto Installer! This script is designed to automatically install and configure a suite of OSINT (Open-Source Intelligence) tools on macOS. Built with a touch of Rick Sanchez's genius, this script will have your OSINT tools up and running in no time.
+
+## Table of Contents
+- [Features](#features)
+- [Tools Installed](#tools-installed)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
+- Automated installation of popular OSINT tools.
+- Generates an HTML report of the installed tools.
+- Provides example commands for each tool.
 
-- Automated installation of various OSINT tools
-- Generates a detailed HTML report of the installation status
-- Provides command examples and source links for each tool
+## Tools Installed
 
-## Tools Included
-
-- **PhoneInfoga**: Reverse cell lookup
-  - **Source**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga)
-  - **Popular Command**: `phoneinfoga --phone 1234567890`
-
-- **OSINT Framework**: General OSINT goodness
-  - **Source**: [OSINT Framework](https://github.com/lockfale/OSINT-Framework)
-  - **Popular Command**: `open OSINT-Framework/index.html`
-
-- **SpiderFoot**: Reverse email/domain recon
-  - **Source**: [SpiderFoot](https://github.com/smicallef/spiderfoot)
-  - **Popular Command**: `sf.py -m sfp_email -t target@example.com`
-
-- **theHarvester**: Email/name harvesting
-  - **Source**: [theHarvester](https://github.com/laramies/theHarvester)
-  - **Popular Command**: `theharvester -d example.com -b google`
-
-- **Recon-ng**: Reverse address/email recon
-  - **Source**: [Recon-ng](https://github.com/lanmaster53/recon-ng)
-  - **Popular Command**: `recon-ng -m recon/contacts-credentials`
-
-- **Maltego CE**: GUI reverse lookup madness
-  - **Source**: [Maltego CE](https://www.maltego.com/downloads/)
-  - **Popular Command**: `open /Applications/Maltego.app`
-
-- **Sherlock**: Reverse name/username hunt
-  - **Source**: [Sherlock](https://github.com/sherlock-project/sherlock)
-  - **Popular Command**: `sherlock johndoe`
-
-- **holehe**: Reverse email checker
-  - **Source**: [holehe](https://github.com/megadose/holehe)
-  - **Popular Command**: `holehe test@example.com`
-
-- **VinSpy**: License plate lookup (US only)
-  - **Source**: [VinSpy](https://github.com/vinspy/vinspy)
-  - **Popular Command**: `vinspy.py --plate ABC123`
-
-- **Twint**: Reverse name/social lookup
-  - **Source**: [Twint](https://github.com/twintproject/twint)
-  - **Popular Command**: `twint -u johndoe`
+| Tool            | Description                      | Command Example                           | Source                                          |
+|-----------------|----------------------------------|-------------------------------------------|-------------------------------------------------|
+| PhoneInfoga     | Reverse cell lookup              | `phoneinfoga --phone 1234567890`          | [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) 
+| OSINT Framework | General OSINT goodness           | `open OSINT-Framework/index.html`         | [OSINT Framework](https://github.com/lockfale/OSINT-Framework) 
+| SpiderFoot      | Reverse email/domain recon       | `sf.py -m sfp_email -t target@example.com`| [SpiderFoot](https://github.com/smicallef/spiderfoot) 
+| theHarvester    | Email/name harvesting            | `theharvester -d example.com -b google`   | [theHarvester](https://github.com/laramies/theHarvester) 
+| Recon-ng        | Reverse address/email recon      | `recon-ng -m recon/contacts-credentials`  | [Recon-ng](https://github.com/lanmaster53/recon-ng) 
+| Maltego CE      | GUI reverse lookup madness       | `open /Applications/Maltego.app`          | [Maltego](https://www.maltego.com/downloads/)    
+| Sherlock        | Reverse name/username hunt       | `sherlock johndoe`                        | [Sherlock](https://github.com/sherlock-project/sherlock) 
+| holehe          | Reverse email checker            | `holehe test@example.com`                 | [holehe](https://github.com/megadose/holehe)     
+| VinSpy          | License plate lookup (US only)   | `vinspy.py --plate ABC123`                | [VinSpy](https://github.com/vinspy/vinspy)       
+| Twint           | Reverse name/social lookup       | `twint -u johndoe`                        | [Twint](https://github.com/twintproject/twint)   
 
 ## Installation
 
-See Steps below.
+To install these tools, simply clone the repository and run the `osxOSINT.py` script.
 
-### Prerequisites
-
-- macOS
-- Homebrew
-- Python 3.x
-
-### Steps
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/heyfinal/osxOSINT.git
-    cd osxOSINT
-    ```
-
-2. Make the script executable:
-
-    ```bash
-    chmod +x osxOSINT.py
-    ```
-
-3. Run the script:
-
-    ```bash
-    ./osxOSINT.py
-    ```
-
-The script will ensure that `pipx` is installed via Homebrew if it's not already present. It will then proceed to install the listed OSINT tools, generating a status report and an HTML report on your desktop.
+```bash
+git clone https://github.com/heyfinal/osxOSINT.git
+cd osxOSINT
+chmod +x osxOSINT.py
+./osxOSINT.py
+```
 
 ## Usage
 
-Once installed, you can use the tools with the provided command examples. Refer to the source links for detailed documentation on each tool.
+ install
+ ```bash
+chmod +x osxOSINT.py
+./osxOSINT.py
+```
 
-## Report
+Once the script has finished running, it will generate an HTML report on your Desktop named `osint_tools_report.html`. The report will provide the installation status and example commands for each tool.
 
-The script generates an HTML report `osint_tools_report.html` on your desktop, summarizing the installation status of each tool.
 
-## Credits
+```bash
+open ~/Desktop/osint_tools_report.html
+```
 
-- Built by Ai and Daniel Gillaspy
-- Inspired by Rick Sanchez’s OSINT Lab
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is not licenced & provides no warrenty.
+This project is not licenced & offers not warrenty. Use & modify as you deem fit.
+---
+
+Built with Rick Sanchez's genius and Daniel Gillaspy's help, you pathetic Earthlings!
 ```
 
-Feel free to customize this `README.md` file to better fit your needs.
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/danielgillaspy?igsh=MWRjeXJnOXo5aXhkYg%3D%3D&utm_source=qr)
+[![Email](https://img.shields.io/badge/Email-daniel@gillaspy.me-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daniel@gillaspy.me)
